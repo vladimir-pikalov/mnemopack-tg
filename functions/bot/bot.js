@@ -1,5 +1,8 @@
 const { Telegraf } = require("telegraf")
 const bot = new Telegraf(process.env.BOT_TOKEN)
+const axios = require('axios');
+
+require('dotenv').config();
 
 async function interact(ctx, chatID, request) {
 
